@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+.textcenter, .advantage p, .featured p {
+  text-align: center;
+  color: #000; }
+
+html {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; }
+
+header {
+  background-color: #313332; }
+
+nav {
+  height: 50px; }
+  nav ul {
+    padding: 0px;
+    margin: 0;
+    margin-right: 50px;
+    list-style-type: none;
+    float: right; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif; }
+
+.hero {
+  background: url(https://static.pexels.com/photos/40185/mac-freelancer-macintosh-macbook-40185.jpeg);
+  width: 100%;
+  height: 100vh;
+  padding-top: 42vh;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+
+.slogan {
+  background-color: rgba(97, 97, 97, 0.7);
+  color: #FFF;
+  max-width: 800px;
+  padding: 20px;
+  float: right; }
+  .slogan > h1 {
+    text-align: left;
+    text-transform: lighter; }
+  .slogan h1 + h1 {
+    text-align: left;
+    text-transform: uppercase; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* GIRD */
+[class*="col-"] {
+  float: left;
+  width: 100%; }
+
+/* style ikonek */
+.advantage {
+  text-align: center;
+  padding: 20px; }
+  .advantage i.fa {
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 120px;
+    padding: 20px;
+    background: #000;
+    border-radius: 25px;
+    text-align: center; }
+
+section .container {
+  margin: 50px auto;
+  text-align: center; }
+
+.featured h1 {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/* style dla galerii */
+.gallery .row [class*="col-"] {
+  position: relative; }
+.gallery img {
+  width: 100%; }
+.gallery .layer {
+  position: absolute;
+  width: 100%;
+  height: 98%; }
+.gallery i.fa {
+  visibility: hidden;
+  color: #313332;
+  padding: 10px;
+  margin-top: 25%;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px; }
+
+/* Zatrudnieni */
+.employees .image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  left: 15%; }
+.employees .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 200px;
+  transition: 0.5s;
+  text-align: center; }
+.employees h3 {
+  margin: 0;
+  transition: 0.5s;
+  opacity: 0;
+  color: #fff; }
+
+.pictures {
+  background-color: #313332;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff; }
+  .pictures h1 {
+    text-transform: uppercase;
+    font-style: bold; }
+
+.numbers {
+  margin-top: 50px;
+  text-align: center; }
+  .numbers h1 {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase; }
+  .numbers p {
+    padding: 5px;
+    color: #07C9ED;
+    text-align: center; }
+  .numbers h3 {
+    text-align: right; }
+
+.contacts {
+  background-color: #313332; }
+  .contacts h1,
+  .contacts p {
+    text-align: left;
+    color: #fff; }
+  .contacts p {
+    margin-top: 0; }
+  .contacts h3 {
+    margin-top: 0;
+    color: #fff; }
+  .contacts h1 {
+    position: relative; }
+  .contacts h1:after {
+    position: absolute;
+    content: " ";
+    top: 50%;
+    background-color: white;
+    height: 2px;
+    width: 80px;
+    margin-left: 10px; }
+
+.social i.fa {
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  color: #fff;
+  background-color: #00c7e8;
+  border-radius: 0%;
+  padding: 5px; }
+
+footer {
+  margin: -50px; }
+  footer p {
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    text-align: center; }
+
+@media (max-width: 767px) {
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; }
+
+  header {
+    width: 100%;
+    text-align: center; }
+
+  nav {
+    height: 100%; }
+    nav ul {
+      background-color: #313332;
+      width: 100%;
+      margin: 0 auto;
+      float: none; }
+
+  .slogan {
+    width: 50%; }
+
+  h1 {
+    font-size: 4vw; }
+
+  .advantage .row [class*="col-"] {
+    width: 100%; }
+
+  .gallery .row [class*="col-"] {
+    width: 100%; }
+  .gallery i.fa {
+    visibility: visible;
+    margin-left: 25%; }
+  .gallery .layer {
+    background-color: none; }
+
+  .employees .row [class*="col-"] {
+    width: 100%; }
+
+  .pictures {
+    text-align: center; }
+    .pictures .col-s-4 p {
+      font-style: italic; }
+    .pictures img {
+      display: none; }
+    .pictures .row [class*="col-"] {
+      width: 100%; }
+
+  .numbers .row [class*="col-"] {
+    width: 50%; }
+
+  .contacts .row [class*="col-"] {
+    width: 100%; }
+  .contacts h3,
+  .contacts p {
+    text-align: center; }
+
+  .image {
+    margin: 0 auto; } }
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; }
+
+  nav ul li a:hover {
+    color: #07C9ED;
+    transition: 0.5s; }
+
+  .advantage .col-m-4:hover i {
+    background-color: #07C9ED;
+    transition: 0.4s; }
+  .advantage .col-m-4:hover h1 {
+    color: #07C9ED;
+    transition: 0.4s; }
+
+  .pictures .col-m-4 p {
+    font-style: italic; }
+
+  .employees .image {
+    position: relative; }
+  .employees .layer {
+    position: absolute; }
+  .employees .image:hover .layer {
+    background: rgba(0, 0, 0, 0.5); }
+  .employees .image:hover .layer h3 {
+    opacity: 1; }
+
+  .gallery .layer:hover i.fa {
+    visibility: visible;
+    cursor: pointer; }
+  .gallery .layer:hover {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease; }
+  .gallery i.fa:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease; }
+
+  .social i.fa:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease; } }
